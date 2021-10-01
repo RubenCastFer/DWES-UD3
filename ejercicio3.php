@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ejercicio3</title>
+    <title>ejercicio 3</title>
 </head>
 <body>
     <?php
@@ -17,7 +17,7 @@
             case 5: echo "viernes"; break;
             case 6: echo "sabado"; break;
             case 7: echo "domingo"; break;
-            default: echo "numero incorrecto";
+            default: echo "numero incorrecto"; break;
         }
     ?>
 </body>
