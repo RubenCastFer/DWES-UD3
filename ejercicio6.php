@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <table border="1" cellpadding="0" cellspacing="0" background="red" >
+    <table border="1" cellpadding="0" cellspacing="0" >
         <tr bgcolor= 'red'>
             <th>
             <font color = white> 2 Elevado a 

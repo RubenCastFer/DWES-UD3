@@ -23,18 +23,17 @@
     <br>
 
     <?php
-        $año = strtotime("01-06-1996");
-        $añoActual = strtotime(date("d-m-Y"));
-        $añosDiferencia = ($añoActual) - $año;
-        echo $añosDiferencia;
+        $año = new DateTime(date("2003-10-5"));
+        $añoActual = new DateTime();
+        $añosDiferencia = $añoActual->diff($año);
+        echo $añosDiferencia->y;
         echo "<p>";
-        $edad  = ($añosDiferencia / (365 * 60 * 60 * 24));
-        echo $edad;
+        
         echo "<p>";
 
-        if ($edad<18){
+        if ($añosDiferencia->y<18){
             echo "no puede pasar";
-        } elseif ($edad >= 18 && $edad<=65) {
+        } elseif ($añosDiferencia->y >= 18 && $añosDiferencia->y<=65) {
             echo "puede pasar";
         } else {
             echo "demasiado mayor para pasar";
