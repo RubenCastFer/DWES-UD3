@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <table border="1" cellpadding="0" cellspacing="0" background="red" >
+<table border="1" cellpadding="0" cellspacing="0" background="red" >
         <tr bgcolor= 'red'>
             <th>
             <font color = white> 2 Elevado a 
@@ -20,14 +20,21 @@
         <?php
             $limite = 10;
             for ($i = 0; $i <= $limite; $i++ ){
+                if ($i == 4){
+                   
+                    continue;
+                }
+                if($i == 6){
+                    break;
+                }
                 $resultado = pow(2,$i);
                 echo "<tr bgcolor= 'red'>
                         <th><font color = white> $i </th>
                         <th><font color = white>  $resultado </th> 
                     <tr>";
+                
             }
         ?>
     </table>
-   
 </body>
 </html>

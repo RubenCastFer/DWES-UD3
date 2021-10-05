@@ -12,6 +12,7 @@
             echo $i, "<br/>";
         }
         echo "<p>";
+        
         foreach($_SERVER as $key_arr => $i){
             echo $key_arr, " = ", $i, "<br>";
         }
