@@ -8,6 +8,7 @@
 </head>
 <body>
     <?php
+    /*
     $fechaNacimiento = "01/06/1996";
     $dia=substr($fechaNacimiento,0,2);
     $mes=substr($fechaNacimiento,3,2);
@@ -24,6 +25,26 @@
             $sumaFecha=($sumaFecha/10);
         }while ($sumaFecha>=1 || $sum >9);
         echo $sum;
+    */
+
+    
+        $fechaNacimiento = new DateTime(date("1996-06-01"));
+        $dia=$fechaNacimiento->format("d");
+        $mes=$fechaNacimiento->format("m");
+        $año=$fechaNacimiento->format("Y");
+        
+        $sumaFecha =  $año+$mes+$dia;
+        $sum=0;
+            do{
+                if($sumaFecha==0){
+                    $sumaFecha=$sum;
+                    $sum;
+                }
+            
+                $sum+=$sumaFecha%10;
+                $sumaFecha=($sumaFecha/10);
+            }while ($sumaFecha>=1 || $sum >9);
+            echo $sum;
     ?>
 </body>
 </html>
