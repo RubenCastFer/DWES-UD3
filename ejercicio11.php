@@ -18,7 +18,7 @@
             
             echo "<tr>";
             for ($a = 1; $a <= $limite; $a++){
-               // $contador++;
+                //$contador++;
                 if ($a == 10) {
                     $por = 10 * ($i+1);
                     if ($contador%2==0){
