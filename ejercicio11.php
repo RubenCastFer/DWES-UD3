@@ -5,9 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .tabla{
+            border-width: 3px;
+            border-style: solid;
+        }
+        tr, td {
+            padding: 2px;
+        }   
+    </style>
 </head>
 <body>
-    <table border="1" cellpadding="0" cellspacing="0">
+    <table class="tabla">
     <?php
        $contador=0;
        $verde = "green";
